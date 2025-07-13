@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AumondiFlix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPk45qp4iVX2ltVpIIYL7DKD9lZTRWpDVQhMGnm7rk66DcSLR_m0NgI6ScrlgKigcCUwv1FtGDUAucTHtYJ2Bgbhxw-xnbuIx-0kEIkQQqIsw29qZz-U9DiV6g9tQ4KW9p8z51nGo8gRw/s1170/netflix-servico-distribuicao-jogos-mobile.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+    }
+
+    .movie-card {
+      background-color: rgba(0, 0, 0, 0.85);
+      border: 1px solid red;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px red;
+    }
+
+    .no-movie-message {
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    #filtrosCategorias .btn {
+      color: white !important;
+      border-color: red;
+    }
+
+    #filtrosCategorias .btn-danger {
+      background-color: red;
+      border-color: red;
+    }
+
+    #filtrosCategorias .btn-outline-danger:hover {
+      background-color: red;
+      color: white !important;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3" href="#">AumondiFlix</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto me-3">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="logoutBtn">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="filtrosCategorias" class="text-center my-4"></div>
+  <div id="mensagem" class="container"></div>
+  <div id="listaFilmes" class="container d-flex flex-wrap justify-content-center"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/pouchdb@7.0.0/dist/pouchdb.min.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

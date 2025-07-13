@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administração</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #000;
+      background-image: url('img/imgcadusuario.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: white;
+    }
+
+    .admin-container {
+      width: 100%;
+      max-width: 650px;
+      padding: 35px 40px;
+      background-color: rgba(0, 0, 0, 0.88);
+      border: 2px solid red;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(255, 0, 0, 0.4);
+      text-align: center;
+    }
+
+    h3 {
+      color: #ff4b4b;
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .btn-admin {
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    .btn-danger {
+      background-color: red;
+      border: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    .btn-danger:hover {
+      background-color: #c40000;
+    }
+  </style>
+</head>
+<body>
+  <div class="admin-container">
+    <h3>Bem-vindo, Admin</h3>
+    <p>Escolha uma das opções abaixo:</p>
+    <a href="cadastro-filme.html" class="btn btn-danger btn-admin">Cadastrar Filme</a>
+    <a href="cadastro-usuario.html" class="btn btn-danger btn-admin">Cadastrar Usuário</a>
+  </div>
+</body>
+</html>
