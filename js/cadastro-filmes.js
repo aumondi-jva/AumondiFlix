@@ -1,6 +1,6 @@
 const db = new PouchDB('filmes');
 
-// Limite máximo de caracteres
+// Aonde adiciono limite de caracteres na sinopse
 const MAX_CHAR = 400;
 
 const synopsisInput = document.getElementById('synopsis');

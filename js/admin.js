@@ -1,6 +1,6 @@
 const db = new PouchDB('filmes');
 
-// Função para cadastrar filmes
+// Onde cadastra filmes
 document.getElementById('movie-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const movie = {

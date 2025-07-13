@@ -1,4 +1,4 @@
-// ✅ Impede acesso à index sem estar logado
+// Impede acessar a listagem de filmes
 if (!localStorage.getItem("logado")) {
   window.location.href = "login.html";
 }

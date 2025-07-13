@@ -10,7 +10,7 @@ document.getElementById('user-form').addEventListener('submit', async function(e
   try {
     await db.put({ _id: email, password, role });
     alert('Usuário cadastrado com sucesso!');
-    window.location.href = "login.html"; // redireciona após o cadastro
+    window.location.href = "login.html"; // Redireciona o usuário após o cadastro
   } catch (err) {
     alert('Erro ao cadastrar o usuário. Verifique se o email já está cadastrado.');
   }
